@@ -1,0 +1,122 @@
+:root{
+    --white: #fff;
+    --dark: #000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 104vh;
+    font-family: 'Inter', sans-serif;
+}
+.light{
+    background: url(/images/BGLight.jpg)!important;
+    background-repeat: no-repeat!important;
+    background-position: center!important;
+    background-size: cover!important;
+    color: var(--white)!important;
+}
+.dark{
+    background: url(/images/Dark.jpg)!important;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.view{
+    display: flex!important;
+}
+.noView{
+    display: none!important;
+}
+.user{
+    margin-bottom: 20px;
+}
+.user img{
+    position: relative;
+    top: -80px;
+}
+@keyframes loading {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+.spinner.is-animating {
+    animation: loading 2s linear infinite;
+}
+#resultado{
+    display: none;
+    position: absolute;
+    align-items: center;
+    flex-direction: column;
+    width: 15rem;
+    height: 12rem;
+    padding: 6rem;
+    background: darkgray;
+    gap: 20px;
+    border-radius: 20px;
+}
+#result{
+    padding: 2rem;
+    width: 100%;
+    margin-bottom: 50px;
+    text-align: center;
+}
+#resultado button{
+    display: flex;
+    font-size: 1rem;
+    padding: 0.8rem 2rem;
+    border-radius: 20px;
+    background: red;
+    border: none;
+    color: var(--white1);
+    cursor: pointer;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 10rem 7rem;
+    background-color: var(--dark);
+    color: var(--white);
+    border-radius: 20px;
+    opacity: 0.8;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+}
+.info input{
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#btn{
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    border: none;
+    background: darkcyan;
+    color: var(--white);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#btn:hover{
+    background-color: red;
+    transition: .4s;
+}
+::-webkit-input-placeholder {
+    color: #000;
+ }

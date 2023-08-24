@@ -16,14 +16,14 @@ body{
     font-family: 'Inter', sans-serif;
 }
 .light{
-    background: url(/images/BGLight.jpg)!important;
+    background: url(../images/BGLight.jpg)!important;
     background-repeat: no-repeat!important;
     background-position: center!important;
     background-size: cover!important;
     color: var(--white)!important;
 }
 .dark{
-    background: url(/images/Dark.jpg)!important;
+    background: url(../images/Dark.jpg)!important;
     background-repeat: no-repeat;
     background-position: center;
 }
